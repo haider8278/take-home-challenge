@@ -26,8 +26,8 @@ const Profile = () => {
         e.preventDefault()
         axios
             .post('/api/user/preferences', preferences)
-            .then(res => alert('Preferences saved successfully!'))
-            .catch(err => alert('Error saving preferences'))
+            .then(() => alert('Preferences saved successfully!'))
+            .catch(() => alert('Error saving preferences'))
     }
 
     return (
@@ -41,10 +41,10 @@ const Profile = () => {
                                 <h2 className="text-lg font-bold py-3">
                                     Select Preferred Sources
                                 </h2>
-                                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                     {sources.map(source => (
                                         <li
-                                            class="flex items-center"
+                                            className="flex items-center"
                                             key={source.id}>
                                             <input
                                                 className="mr-2"
@@ -83,11 +83,11 @@ const Profile = () => {
                                 <h2 className="text-lg font-bold py-3">
                                     Select Preferred Categories
                                 </h2>
-                                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                     {categories.map(category => (
                                         <li
                                             key={category.id}
-                                            class="flex items-center">
+                                            className="flex items-center">
                                             <input
                                                 className="mr-2"
                                                 type="checkbox"
@@ -124,11 +124,11 @@ const Profile = () => {
                                 <h2 className="text-lg font-bold py-3">
                                     Select Preferred Authors
                                 </h2>
-                                <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                                <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                                     {authors.map(author => (
                                         <li
                                             key={author.id}
-                                            class="flex items-center">
+                                            className="flex items-center">
                                             <input
                                                 className="mr-2"
                                                 type="checkbox"

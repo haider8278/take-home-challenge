@@ -143,7 +143,7 @@ const NewsFeed = () => {
                         <div className="w-1/3 max-sm:w-full h-56 relative overflow-hidden rounded-lg">
                             <img
                                 src={article.thumbnail_url}
-                                className="object-cover w-full h-full"></img>
+                                className="object-cover w-full h-full" />
                         </div>
 
                         <div className="w-full pl-14 max-sm:pl-0">

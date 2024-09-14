@@ -15,10 +15,10 @@ services:
     ports:
       - "3306:3306"
     environment:
-      MYSQL_DATABASE: newsDb
+      MYSQL_DATABASE: challeng
       MYSQL_USER: root
-      MYSQL_PASSWORD: secretnewsDb
-      MYSQL_ROOT_PASSWORD: secretnewsDb
+      MYSQL_PASSWORD:
+      MYSQL_ROOT_PASSWORD:
     volumes:
       - ./mysql:/var/lib/mysql
 
